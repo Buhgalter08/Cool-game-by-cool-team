@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://pgdeyvv3rean"]
+
+[ext_resource type="Script" uid="uid://bmm57b6xjubot" path="res://Starting.gd" id="1_a3t71"]
+
+[node name="Starting" type="Node2D" unique_id=478325170]
+script = ExtResource("1_a3t71")
+
+[node name="Button" type="Button" parent="." unique_id=1603782032]
+offset_left = 498.0
+offset_top = 221.0
+offset_right = 637.4286
+offset_bottom = 269.0
+text = "Start"
+
+[node name="Button2" type="Button" parent="." unique_id=1461818567]
+offset_left = 498.0
+offset_top = 281.0
+offset_right = 637.4286
+offset_bottom = 329.0
+text = "Settings"
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_down" from="Button2" to="." method="_on_button_2_button_down"]
